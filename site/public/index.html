@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sarhadi Real Estate | Luxury Canadian Living</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700&amp;family=Geist:wght@100;300;400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed": "#241a00",
+                        "surface-container": "#1f1f22",
+                        "on-background": "#e4e1e5",
+                        "on-tertiary-fixed": "#1c1b1d",
+                        "on-tertiary": "#313032",
+                        "on-primary-container": "#554300",
+                        "surface-container-low": "#1b1b1e",
+                        "tertiary": "#d0ced0",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-surface": "#e4e1e5",
+                        "primary-fixed": "#ffe088",
+                        "surface-container-high": "#2a2a2d",
+                        "on-tertiary-container": "#464547",
+                        "surface-container-highest": "#353437",
+                        "outline-variant": "#4d4635",
+                        "surface-tint": "#e9c349",
+                        "tertiary-container": "#b5b2b5",
+                        "on-primary": "#3c2f00",
+                        "surface-variant": "#353437",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed-variant": "#454747",
+                        "inverse-on-surface": "#303033",
+                        "secondary-container": "#454747",
+                        "surface-dim": "#131316",
+                        "surface-bright": "#39393c",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#b4b5b5",
+                        "inverse-primary": "#735c00",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#131316",
+                        "background": "#131316",
+                        "secondary": "#c6c6c7",
+                        "primary": "#f2ca50",
+                        "primary-container": "#d4af37",
+                        "inverse-surface": "#e4e1e5",
+                        "tertiary-fixed-dim": "#c8c6c8",
+                        "surface-container-lowest": "#0e0e11",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "outline": "#99907c",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-error": "#690005",
+                        "on-secondary": "#2f3131",
+                        "secondary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e5e1e4",
+                        "on-surface-variant": "#d0c5af",
+                        "on-tertiary-fixed-variant": "#474649"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "h1": ["Outfit"],
+                        "body-md": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "display-xl": ["Outfit"],
+                        "display-2xl": ["Outfit"],
+                        "h2": ["Outfit"],
+                        "label-caps": ["Geist"],
+                        "mono": ["JetBrains Mono"]
+                    },
+                    fontSize: {
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "display-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "display-2xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "300" }],
+                        "h2": ["24px", { "lineHeight": "1.3", "letterSpacing": "0.05em", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #09090b; } /* Zinc-950 equivalent */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .sharp-edge { border-radius: 0 !important; }
+        .vertical-pipe::after { content: '|'; margin: 0 1rem; opacity: 0.1; color: white; }
+    </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-zinc-950 border-b border-white/10">
+<div class="flex justify-between items-center w-full px-16 py-10 max-w-[1920px] mx-auto">
+<div class="text-xl font-semibold tracking-tighter text-[#D4AF37] uppercase font-h1">
+                Sarhadi Real Estate
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-[#D4AF37] border-b-2 border-[#D4AF37] pb-1 transition-none" href="index.html">Home</a>
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="listings.html">Listings</a>
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="property.html">Details</a>
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="about.html">About</a>
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="testimonials.html">Testimonials</a>
+<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="contact.html">Contact</a>
+</div>
+<button class="px-8 py-3 border border-[#D4AF37] text-[#D4AF37] font-label-caps text-xs uppercase hover:bg-[#D4AF37] hover:text-zinc-950 transition-none">
+                Inquire
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen pt-32 grid grid-cols-1 md:grid-cols-12 gap-0 overflow-hidden">
+<div class="md:col-span-7 relative h-[716px] md:h-screen">
+<img class="w-full h-full object-cover" data-alt="A cinematic architectural shot of a brutalist luxury villa at dusk, featuring sharp geometric lines of poured concrete and expansive floor-to-ceiling glass panels. The warm interior lighting contrasts against the cool, dark Zinc-950 atmosphere of the surrounding Canadian landscape. The composition is clean and expansive, emphasizing the structural minimalism of the property with no distractions, reflecting a high-end, exclusive real estate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjNPVs6ufSd_gTxxMiaMRNVefTldt3HCmjAWcq6CnUoKTVQN-fLNcrmggMqmoLxsssy5EfWbezlyaaxp-Yhl1HG4Um8Ds-msZdzrP-lWt-Ti_nSdp1bAsiaQp1lbL4rjoSQBn7BncKBwU2y_FzMDyiCw0ZxL_BSMXkuU2inwmRVWbJnWN7Zx0uo_CB2wK8kA9Z445FiMUJMoyJsGjuGnov_-Y0u9WszvMNIzvknPkcFKYkxO7dDula93GjI3IeAMxlNUAbQrUPW5Gy"/>
+<div class="absolute inset-0 bg-gradient-to-r from-zinc-950/20 to-transparent"></div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center px-12 md:px-24 py-20 bg-zinc-950">
+<span class="font-label-caps text-primary-container mb-6 block uppercase tracking-[0.3em]">Excellence Defined</span>
+<h1 class="font-display-xl text-white mb-8 leading-tight">
+                    Elevating <br/>
+<span class="text-primary-container">Canadian</span> <br/>
+                    Real Estate
+                </h1>
+<p class="font-body-lg text-white/60 mb-12 max-w-md">
+                    Ankit and Kunal Sarhadi provide a bespoke white-glove service for the most discerning clients. Experience the intersection of architectural mastery and financial precision.
+                </p>
+<div>
+<button class="px-10 py-5 border border-primary-container text-primary-container font-label-caps text-sm uppercase hover:bg-primary-container hover:text-zinc-950 transition-none">
+                        View Exclusive Listings
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Properties -->
+<section class="py-32 px-16 max-w-[1920px] mx-auto bg-zinc-950">
+<div class="flex justify-between items-end mb-24 border-b border-white/10 pb-12">
+<div>
+<h2 class="font-display-xl text-white mb-4">The Portfolio</h2>
+<p class="font-label-caps text-white/40 uppercase tracking-[0.2em]">Toronto, Ontario — Curated Selection</p>
+</div>
+<div class="font-label-caps text-primary-container border-b border-primary-container pb-2 cursor-pointer hover:text-white hover:border-white transition-none">
+                    View All Assets
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Property 1 -->
+<div class="group flex flex-col space-y-6">
+<div class="overflow-hidden aspect-[4/5]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Modernist luxury penthouse interior in Toronto, featuring double-height ceilings and a monochromatic palette of dark stone and polished steel. Massive glass windows overlook the night city skyline. The lighting is low-key and dramatic, highlighting the sharp edges of the bespoke furniture. The overall aesthetic is one of silent power and architectural clarity, consistent with the Sarhadi brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgzrZ8loPEv7SdQnvGXJAlqYnB_dCyTx8zVGJdEix4N5wlcJ5HKECBHBwRofcPl64s0LD1j2IKUtm2XoRWa5_bR90u8qNro2xKlvmIKFuKr_2GJmJwJgU3Il4OWHjXIBNf7I-wu_37wYiwP4M4YFfk8XvIxLft1hekY-G09ntY4UIts9hzyRh0acwP3UVKjX00lJ0OCmooURbyW0kxDG2g1KNK9nqB5bx96ffCYixvcRoDZ3XtZy6TYhtQmGMjPQVv-XTdlc1bFHTJ"/>
+</div>
+<div class="flex flex-col space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-h2 text-white uppercase tracking-wider">The Obsidian Estate</h3>
+<span class="font-mono text-primary-container text-lg">$14,250,000</span>
+</div>
+<div class="flex gap-6 font-mono text-xs text-white/40 uppercase border-t border-white/5 pt-4">
+<span>4 Beds</span>
+<span class="opacity-30">/</span>
+<span>5 Baths</span>
+<span class="opacity-30">/</span>
+<span>6,000 SQFT</span>
+</div>
+</div>
+</div>
+<!-- Property 2 (Offset/Asymmetric) -->
+<div class="group flex flex-col space-y-6 md:mt-24">
+<div class="overflow-hidden aspect-[4/5]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="External view of a luxury minimalist residence with a cantilevered second floor made of dark cedar and black metal. The property is surrounded by manicured minimalist landscaping and sharp concrete walkways. Bright, clear daylight creates strong shadows that define the geometric form. The color palette is strictly limited to blacks, dark wood tones, and cool greys, emphasizing the ultra-high-net-worth real estate market." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX2tCyKUTvJvxp4QkxCiY0BECFycYfv8eo0ZAtSNc8eATrMs0PrTv1eVycejvo1vD0ynjwxY5Q6kT6RR7SsasoKDGwHqZ2RLnAR9fxGgUrkDK1K5ZfA2NfN8Qshf--22u7-YVv1wk7ynsZZoQ9AgkYtkvLygKVPj79KJppDlxAUjZmEdCGnFjuqfOANxXEvrZIOfQhUp1aAWJ_Ki7ztSWlEWHRfZ6ImFPC9CdN_Tf0MP4pCg05lxLPqIPH_O_5433-qZU1X_1ZTaGD"/>
+</div>
+<div class="flex flex-col space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-h2 text-white uppercase tracking-wider">Bridle Path Manor</h3>
+<span class="font-mono text-primary-container text-lg">$28,000,000</span>
+</div>
+<div class="flex gap-6 font-mono text-xs text-white/40 uppercase border-t border-white/5 pt-4">
+<span>6 Beds</span>
+<span class="opacity-30">/</span>
+<span>8 Baths</span>
+<span class="opacity-30">/</span>
+<span>12,400 SQFT</span>
+</div>
+</div>
+</div>
+<!-- Property 3 -->
+<div class="group flex flex-col space-y-6">
+<div class="overflow-hidden aspect-[4/5]">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Interior shot of a luxury property entrance hall featuring a floating marble staircase and a single 1px light strip for illumination. The walls are finished in a dark, matte Zinc-950 plaster. The space is vast and uncluttered, exemplifying structural minimalism. High-contrast lighting creates a dramatic, gallery-like experience where the architectural materials are the focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXIIFG19vpGwKqcq1WgTiM1jQnz8jvgs50WEQletLurPI0fkltoj3F7Do890OBX0jW01XHE_aWGHufRjyQOPYtxHDLGihdd0Jp14txyAk5IUQKHhavx0Oxzo1x99XgoCmJemeqp-x3Obt5e-6IJ_tLpaDckYEpynPiiy6bt9WiSFVu1O_L_9Rjo-EOfhs_EgttIHy97AoQX5GeC6fbwp3rRaU0uN9c-SV1XoMgGF8GoftK1g7Dr9N-EZcEEwEG95xMq-DDPws031SL"/>
+</div>
+<div class="flex flex-col space-y-4">
+<div class="flex justify-between items-start">
+<h3 class="font-h2 text-white uppercase tracking-wider">Forest Hill Sanctuary</h3>
+<span class="font-mono text-primary-container text-lg">$11,800,000</span>
+</div>
+<div class="flex gap-6 font-mono text-xs text-white/40 uppercase border-t border-white/5 pt-4">
+<span>4 Beds</span>
+<span class="opacity-30">/</span>
+<span>5 Baths</span>
+<span class="opacity-30">/</span>
+<span>6,200 SQFT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Agent Introduction -->
+<section class="py-48 px-16 bg-zinc-900 border-y border-white/5">
+<div class="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-24 items-center">
+<div class="md:col-span-6">
+<div class="relative">
+<img class="w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of Ankit and Kunal Sarhadi" src="agents.png"/>
+<div class="mt-4">
+<h4 class="font-h2 text-white uppercase">Ankit & Kunal Sarhadi</h4>
+<p class="font-label-caps text-primary-container text-[10px] mt-1 tracking-widest uppercase">Principal Partners</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-6">
+<span class="font-label-caps text-primary-container mb-8 block uppercase tracking-[0.4em]">The Founders</span>
+<h2 class="font-display-2xl text-white mb-10">Meet the Sarhadi Brothers</h2>
+<div class="space-y-8 max-w-xl">
+<p class="font-body-lg text-white/70">
+                            With more than 15 years of experience in the Toronto luxury market, Ankit and Kunal Sarhadi have redefined what it means to represent architectural excellence. 
+                        </p>
+<p class="font-body-md text-white/50 leading-relaxed">
+                            Their approach is one of absolute discretion and strategic precision. They do not just sell houses; they curate lifestyles for a global elite who demand transparency, exclusivity, and an uncompromising eye for design.
+                        </p>
+<div class="pt-8 flex gap-12">
+<div>
+<span class="block font-display-xl text-white">$2B+</span>
+<span class="font-label-caps text-white/40 uppercase text-[10px]">Lifetime Transactions</span>
+</div>
+<div class="w-px h-16 bg-white/10"></div>
+<div>
+<span class="block font-display-xl text-white">150+</span>
+<span class="font-label-caps text-white/40 uppercase text-[10px]">Architectural Assets</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section / Inquire -->
+<section class="py-48 px-16 bg-zinc-950 text-center">
+<div class="max-w-4xl mx-auto border border-white/10 p-24 relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-zinc-950 px-6">
+<span class="material-symbols-outlined text-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">
+                        grade
+                    </span>
+</div>
+<h2 class="font-display-xl text-white mb-8">Secure Your Legacy</h2>
+<p class="font-body-lg text-white/60 mb-12 max-w-2xl mx-auto">
+                    Private consultations are available by appointment only for qualified individuals seeking acquisition or divestment services in the Ontario market.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="px-12 py-5 bg-primary-container text-zinc-950 font-label-caps text-sm uppercase transition-none">
+                        Request Prospectus
+                    </button>
+<button class="px-12 py-5 border border-white/20 text-white font-label-caps text-sm uppercase hover:border-white transition-none">
+                        Private Contact
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-16 py-12 gap-8 max-w-[1920px] mx-auto">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="text-lg font-bold text-white uppercase tracking-tighter">Sarhadi Real Estate</div>
+<p class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40">
+                    © 2024 Sarhadi Real Estate. Architectural Excellence.
+                </p>
+</div>
+<div class="flex gap-12">
+<a class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40 hover:text-white transition-none" href="#">Privacy</a>
+<a class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40 hover:text-white transition-none" href="#">Terms</a>
+<a class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40 hover:text-white transition-none" href="#">Legal</a>
+<a class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40 hover:text-white transition-none" href="#">Press</a>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-white/40 hover:text-[#D4AF37] cursor-pointer">public</span>
+<span class="material-symbols-outlined text-white/40 hover:text-[#D4AF37] cursor-pointer">share</span>
+<span class="material-symbols-outlined text-white/40 hover:text-[#D4AF37] cursor-pointer">mail</span>
+</div>
+</div>
+</footer>
+</body></html>

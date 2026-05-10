@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600&family=Geist:wght@400;600&display=swap" rel="stylesheet"/>
+    <title>Sarhadi - Admin Panel</title>
+    <style>
+        ::selection { background-color: #D4AF37; color: #131316; }
+        body { background-color: #131316; color: #e4e1e5; -webkit-font-smoothing: antialiased; }
+        #auth-overlay {
+            position: fixed; inset: 0; z-index: 100;
+            background: #131316; display: flex; align-items: center; justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 min-h-screen font-['Geist']">
+
+<!-- Auth Overlay -->
+<div id="auth-overlay">
+    <div class="max-w-sm w-full p-8 border border-white/10 bg-zinc-900/50 backdrop-blur">
+        <h2 class="text-white font-['Outfit'] tracking-[0.2em] mb-8 text-center text-xl">ADMIN ACCESS</h2>
+        <input type="password" id="admin-pass" placeholder="Enter Password" class="w-full bg-transparent border-t-0 border-x-0 border-b border-white/20 focus:border-[#D4AF37] focus:ring-0 text-white font-['Geist'] py-4 px-0 mb-8 transition-colors text-center" />
+        <button onclick="checkAuth()" class="w-full py-4 bg-transparent border border-[#D4AF37] text-[#D4AF37] font-['Geist'] text-[10px] uppercase tracking-[0.2em] hover:bg-[#D4AF37] hover:text-zinc-950 transition-none">VERIFY</button>
+        <p id="auth-error" class="text-red-500 text-xs tracking-widest uppercase text-center mt-4 hidden">Access Denied</p>
+    </div>
+</div>
+
+<main id="admin-content" class="hidden p-16 max-w-7xl mx-auto">
+    <div class="flex justify-between items-end mb-16 border-b border-white/10 pb-8">
+        <div>
+            <span class="text-[#D4AF37] text-[10px] uppercase tracking-[0.3em] block mb-2">SECURE PORTAL</span>
+            <h1 class="text-4xl text-white font-['Outfit'] tracking-widest uppercase">Private Inquiries</h1>
+        </div>
+        <a href="index.html" class="text-white/40 hover:text-white text-xs tracking-[0.2em] uppercase transition-colors">Return to Site</a>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="border-b border-white/20 text-white/40 text-[10px] uppercase tracking-[0.2em]">
+                    <th class="py-4 px-4 font-normal">Date</th>
+                    <th class="py-4 px-4 font-normal">Name</th>
+                    <th class="py-4 px-4 font-normal">Contact</th>
+                    <th class="py-4 px-4 font-normal">Details</th>
+                </tr>
+            </thead>
+            <tbody id="inquiries-table" class="text-white/80 text-sm">
+                <tr><td colspan="4" class="text-center py-8">Loading inquiries...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script>
+    function checkAuth() {
+        const pass = document.getElementById('admin-pass').value;
+        // Simple client-side auth for the prototype (password: luxury)
+        if (pass === 'luxury') {
+            document.getElementById('auth-overlay').style.display = 'none';
+            document.getElementById('admin-content').classList.remove('hidden');
+            loadInquiries();
+        } else {
+            document.getElementById('auth-error').classList.remove('hidden');
+        }
+    }
+
+    document.getElementById('admin-pass').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') checkAuth();
+    });
+
+    async function loadInquiries() {
+        const tbody = document.getElementById('inquiries-table');
+        try {
+            const res = await fetch('http://localhost:3000/api/inquiries');
+            const data = await res.json();
+            
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center py-8 text-white/40 tracking-widest text-xs uppercase">No inquiries found.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = data.map(inquiry => {
+                const date = new Date(inquiry.created_at).toLocaleDateString('en-US', {
+                    month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit'
+                });
+                return `
+                    <tr class="border-b border-white/5 hover:bg-white/5 transition-colors">
+                        <td class="py-6 px-4 whitespace-nowrap text-white/40 text-xs tracking-wider">${date}</td>
+                        <td class="py-6 px-4 font-['Outfit'] tracking-wider">${inquiry.name}</td>
+                        <td class="py-6 px-4">
+                            <div class="text-xs text-white/60">${inquiry.email}</div>
+                            <div class="text-xs text-white/40">${inquiry.phone || '-'}</div>
+                        </td>
+                        <td class="py-6 px-4 max-w-md text-white/60 leading-relaxed text-xs">${inquiry.details || '-'}</td>
+                    </tr>
+                `;
+            }).join('');
+        } catch(e) {
+            console.error(e);
+            tbody.innerHTML = '<tr><td colspan="4" class="text-center py-8 text-red-500">Failed to load data.</td></tr>';
+        }
+    }
+</script>
+
+</body>
+</html>

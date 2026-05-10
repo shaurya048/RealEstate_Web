@@ -1,0 +1,58 @@
+{
+  "name": "projects/17784440776323302084",
+  "projectId": "17784440776323302084",
+  "title": "Sarhadi Real Estate",
+  "visibility": "PRIVATE",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "screens": {
+    "index": {
+      "id": "940d8d19ce194bd6a3d71003c36c288b",
+      "sourceScreen": "projects/17784440776323302084/screens/940d8d19ce194bd6a3d71003c36c288b",
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 8088
+    },
+    "listings": {
+      "id": "bd4f829bfa574a808f77e3bd837ed780",
+      "sourceScreen": "projects/17784440776323302084/screens/bd4f829bfa574a808f77e3bd837ed780",
+      "x": 2600,
+      "y": 0,
+      "width": 2560,
+      "height": 7228
+    },
+    "property": {
+      "id": "31b7d9a3e57148fba89cc6dffbbc416a",
+      "sourceScreen": "projects/17784440776323302084/screens/31b7d9a3e57148fba89cc6dffbbc416a",
+      "x": 5200,
+      "y": 0,
+      "width": 2560,
+      "height": 6350
+    },
+    "about": {
+      "id": "c22ec3ad31f74983ad5e5b666a7de917",
+      "sourceScreen": "projects/17784440776323302084/screens/c22ec3ad31f74983ad5e5b666a7de917",
+      "x": 7800,
+      "y": 0,
+      "width": 2560,
+      "height": 8056
+    },
+    "testimonials": {
+      "id": "a3e0ed46aa2e49859c864290cf3ae78e",
+      "sourceScreen": "projects/17784440776323302084/screens/a3e0ed46aa2e49859c864290cf3ae78e",
+      "x": 10400,
+      "y": 0,
+      "width": 2560,
+      "height": 7728
+    },
+    "contact": {
+      "id": "5ad7c73c20e94c5bbc77ac52089bf443",
+      "sourceScreen": "projects/17784440776323302084/screens/5ad7c73c20e94c5bbc77ac52089bf443",
+      "x": 13000,
+      "y": 0,
+      "width": 2560,
+      "height": 3340
+    }
+  }
+}
