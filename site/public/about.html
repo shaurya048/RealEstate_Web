@@ -1,207 +1,213 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SARHADI | ABOUT US</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800&amp;family=Geist:wght@100;300;400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SARHADI | PHILOSOPHY & DIRECTORS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "on-primary-fixed": "#241a00",
-                        "background": "#131316",
-                        "outline-variant": "#4d4635",
-                        "outline": "#99907c",
-                        "on-primary-container": "#554300",
-                        "on-background": "#e4e1e5",
-                        "tertiary-container": "#b5b2b5",
-                        "surface-container-low": "#1b1b1e",
-                        "surface": "#131316",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "inverse-surface": "#e4e1e5",
-                        "secondary-fixed": "#e2e2e2",
-                        "inverse-primary": "#735c00",
-                        "surface-dim": "#131316",
-                        "secondary": "#c6c6c7",
-                        "on-tertiary": "#313032",
-                        "on-secondary": "#2f3131",
-                        "on-error-container": "#ffdad6",
-                        "tertiary-fixed-dim": "#c8c6c8",
-                        "primary-fixed-dim": "#e9c349",
-                        "on-surface": "#e4e1e5",
-                        "secondary-container": "#454747",
-                        "on-tertiary-container": "#464547",
-                        "surface-container-highest": "#353437",
-                        "on-surface-variant": "#d0c5af",
-                        "on-secondary-fixed-variant": "#454747",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "primary-container": "#d4af37",
-                        "on-error": "#690005",
-                        "tertiary-fixed": "#e5e1e4",
-                        "primary": "#f2ca50",
-                        "on-primary": "#3c2f00",
-                        "error": "#ffb4ab",
-                        "surface-tint": "#e9c349",
-                        "surface-container-high": "#2a2a2d",
-                        "surface-variant": "#353437",
-                        "on-tertiary-fixed-variant": "#474649",
-                        "on-secondary-container": "#b4b5b5",
-                        "inverse-on-surface": "#303033",
-                        "on-primary-fixed-variant": "#574500",
-                        "tertiary": "#d0ced0",
-                        "surface-bright": "#39393c",
-                        "error-container": "#93000a",
-                        "surface-container": "#1f1f22",
-                        "primary-fixed": "#ffe088",
-                        "on-tertiary-fixed": "#1c1b1d",
-                        "surface-container-lowest": "#0e0e11",
-                        "zinc-950": "#09090b"
+                    colors: {
+                        primary: "#2E5A27",        // Rich forest green
+                        "primary-hover": "#1F3F1B", // Darker forest green
+                        secondary: "#7FA073",      // Sage green accent
+                        "secondary-light": "#EAEFE9", // Soft cream sage background
+                        accent: "#FAF9F6",         // Warm cream main background
+                        "accent-dark": "#F2EFE9",    // Darker cream background
+                        "text-main": "#1C2D1F",     // Charcoal green headings
+                        "text-muted": "#566859",    // Muted slate text
+                        "white-card": "#FFFFFF",    // Card background
+                        "badge-green": "#D5E2D1",   // Badge background green
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "9999px"
+                    borderRadius: {
+                        "4xl": "2rem",
+                        "5xl": "2.5rem",
                     },
-                    "spacing": {
-                        "gutter": "24px",
-                        "margin": "64px",
-                        "unit": "8px",
-                        "feature-offset": "120px"
-                    },
-                    "fontFamily": {
-                        "body-md": ["Geist"],
-                        "body-lg": ["Geist"],
-                        "h2": ["Outfit"],
-                        "display-xl": ["Outfit"],
-                        "label-caps": ["Geist"],
-                        "h1": ["Outfit"],
-                        "display-2xl": ["Outfit"]
-                    },
-                    "fontSize": {
-                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                        "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.05em", "fontWeight": "400"}],
-                        "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
-                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
-                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400"}],
-                        "display-2xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "300"}]
+                    fontFamily: {
+                        sans: ["'Plus Jakarta Sans'", "sans-serif"],
+                        outfit: ["Outfit", "sans-serif"],
                     }
-                },
-            },
+                }
+            }
         }
     </script>
-<style>
-        body { background-color: #09090b; color: #e4e1e5; font-family: 'Geist', sans-serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .gold-border { border-color: #d4af37; }
-        .gold-text { color: #d4af37; }
-        .zinc-border { border-color: rgba(255, 255, 255, 0.1); }
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C2D1F;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .transition-all { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
-<body class="bg-zinc-950 text-on-background antialiased">
-<!-- TopAppBar Component -->
-<header class="bg-zinc-950 docked full-width top-0 border-b border-white/10 z-50 sticky">
-<nav class="flex justify-between items-center w-full px-16 py-8">
-<div class="text-2xl font-light tracking-[0.4em] text-white">SARHADI</div>
-<div class="hidden md:flex gap-12">
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-[12px] font-medium text-white/40 hover:text-amber-500 transition-none" href="#">ESTATES</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-[12px] font-medium text-amber-500 border-b-2 border-amber-500 pb-2 transition-none" href="#">PHILOSOPHY</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-[12px] font-medium text-white/40 hover:text-amber-500 transition-none" href="#">DIRECTORS</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-[12px] font-medium text-white/40 hover:text-amber-500 transition-none" href="contact.html">CONTACT</a>
+<body class="bg-accent text-text-main selection:bg-secondary/30 selection:text-primary overflow-x-hidden">
+
+<!-- Floating Pill Navigation Bar -->
+<div class="fixed top-4 left-4 right-4 z-50 max-w-[1400px] mx-auto">
+    <nav class="bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-secondary-light px-8 py-3.5 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+            <span class="text-xl font-bold tracking-tight text-primary font-outfit">Sarhadi</span>
+            <span class="text-[10px] uppercase tracking-widest text-secondary font-semibold border-l border-secondary-light pl-2">Real Estate</span>
+        </a>
+        
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="index.html">Home</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="listings.html">Listings</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="property.html">Details</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-primary border-b-2 border-primary pb-0.5" href="about.html">About</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="testimonials.html">Testimonials</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="contact.html">Contact</a>
+        </div>
+        
+        <!-- Button -->
+        <a href="contact.html" class="bg-primary hover:bg-primary-hover text-white font-outfit text-[10px] tracking-widest uppercase font-semibold px-6 py-2.5 rounded-full shadow-sm hover:shadow transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-xs leading-none">mail</span>
+            Inquire
+        </a>
+    </nav>
 </div>
-<button class="font-['Outfit'] uppercase tracking-[0.2em] text-[12px] font-medium border border-amber-500 px-8 py-3 text-amber-500 hover:bg-amber-500 hover:text-zinc-950 transition-none">INQUIRE</button>
-</nav>
-</header>
+
 <main>
-<!-- Hero Section -->
-<section class="relative h-[921px] w-full flex items-center justify-start px-16 overflow-hidden">
-<div class="absolute inset-0 z-0 grayscale contrast-125 brightness-50">
-<img class="w-full h-full object-cover" data-alt="A cinematic, high-contrast black and white photograph of two professional founders standing in a massive, brutalist architectural office. The space features raw concrete walls, sharp angular shadows, and floor-to-ceiling windows overlooking a modern skyline. The lighting is dramatic and moody, emphasizing the structural minimalist aesthetic and the commanding presence of the directors. The overall atmosphere is one of power, exclusivity, and architectural permanence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOyf_N4hNuH9nH9d75rEzf6A8YX6q0afVuH3WvJZYJ3-2QxOfASZ97qR0cIgMy4VXZNMV03ojVTj-BXwdF87bdGrVyJXvWg07rPvmUH8Hr9Ajv2m4JYm39ByzvpQAXwvBKdGDyRSjAzeDpjU-slkfZEVYWYI_lDe3ulqC_3ttBEa75kNugIORrNEHG2uXV23EA0vKpI-2iHs6hCMDTyy9Og7lyK5oUgsWhOnCR2fBJ1q4TIOJcycq2n4fLkzLV8Rp5Ynt-pzXHYQnx"/>
-</div>
-<div class="relative z-10 max-w-4xl">
-<h1 class="font-display-2xl text-white uppercase mb-4">THE ARCHITECTS<br/>OF LUXURY</h1>
-<div class="w-32 h-1 bg-amber-500"></div>
-</div>
-</section>
-<!-- Narrative Section -->
-<section class="py-32 px-16 grid grid-cols-1 md:grid-cols-3 gap-16 items-start">
-<div class="md:col-span-1 space-y-8">
-<p class="font-label-caps text-amber-500">OUR PHILOSOPHY</p>
-<p class="font-body-lg text-white/70 leading-relaxed">
-                    At Sarhadi Real Estate, we view property not as a commodity, but as a masterpiece of human intent. Our approach is rooted in the belief that the spaces we inhabit define the lives we lead. We navigate the complexities of the ultra-high-net-worth market with the precision of a master architect and the discretion of a trusted advisor.
-                </p>
-<p class="font-body-lg text-white/70 leading-relaxed">
-                    Founded on the principles of structural minimalism and absolute transparency, we serve a global clientele who demand nothing less than perfection. Our reach extends across Canada's most prestigious postal codes, connecting exceptional individuals with unparalleled estates.
-                </p>
-</div>
-<div class="md:col-span-2 flex items-center pl-16 border-l border-amber-500/30 min-h-[400px]">
-<blockquote class="font-display-xl text-white italic max-w-2xl leading-tight">
-                    "Luxury is not a price point; it is a standard of existence."
-                    <footer class="mt-8 not-italic font-label-caps tracking-[0.3em] text-amber-500">— ANKIT &amp; KUNAL SARHADI</footer>
-</blockquote>
-</div>
-</section>
-<!-- Agent Profiles -->
-<section class="py-32 bg-zinc-900/30">
-<div class="px-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-<div class="md:col-span-5">
-<div class="aspect-[4/5] bg-zinc-800 grayscale hover:grayscale-0 transition-all duration-500">
-<img class="w-full h-full object-cover" data-alt="Professional portrait of Ankit and Kunal Sarhadi" src="agents.png"/>
-</div>
-</div>
-<div class="md:col-span-7 flex flex-col">
-<h3 class="font-h1 text-white mb-2">ANKIT & KUNAL SARHADI</h3>
-<p class="font-label-caps text-amber-500 mb-6">PRINCIPAL PARTNERS</p>
-<p class="font-body-md text-white/60 mb-6 leading-relaxed">
-    With more than 15 years of experience in the Canadian real estate landscape, Ankit and Kunal have orchestrated some of the most significant transactions in the luxury sector.
-</p>
-<p class="font-body-md text-white/60 leading-relaxed">
-    Their approach combines data-driven precision with a formidable negotiation style. They oversee the strategic growth and global reach of Sarhadi Real Estate, connecting architectural heritage with modern investment requirements for the world's most discerning investors.
-</p>
-</div>
-</div>
-</section>
-<!-- The Sarhadi Standard -->
-<section class="py-32 px-16">
-<div class="mb-20 text-center">
-<p class="font-label-caps text-amber-500 mb-4">OUR FOUNDATION</p>
-<h2 class="font-display-xl text-white">THE SARHADI STANDARD</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 border border-white/10">
-<div class="p-20 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center justify-center text-center">
-<h3 class="font-h1 text-white tracking-[0.1em]">UNCOMPROMISED<br/>INTEGRITY</h3>
-</div>
-<div class="p-20 border-b border-white/10 flex flex-col items-center justify-center text-center">
-<h3 class="font-h1 text-white tracking-[0.1em]">BESPOKE<br/>SERVICE</h3>
-</div>
-<div class="p-20 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center justify-center text-center">
-<h3 class="font-h1 text-white tracking-[0.1em]">GLOBAL<br/>REACH</h3>
-</div>
-<div class="p-20 flex flex-col items-center justify-center text-center">
-<h3 class="font-h1 text-white tracking-[0.1em]">DATA-DRIVEN<br/>PRECISION</h3>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer Component -->
-<footer class="bg-zinc-950 docked full-width border-t border-white/10">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-16 py-12 gap-8">
-<div class="text-lg font-light tracking-[0.3em] text-white">SARHADI</div>
-<div class="flex gap-10">
-<a class="font-['Outfit'] uppercase tracking-widest text-[10px] text-white/40 hover:text-amber-500 transition-none" href="#">PRIVACY POLICY</a>
-<a class="font-['Outfit'] uppercase tracking-widest text-[10px] text-white/40 hover:text-amber-500 transition-none" href="#">TERMS OF SERVICE</a>
-<a class="font-['Outfit'] uppercase tracking-widest text-[10px] text-white/40 hover:text-amber-500 transition-none" href="#">ACCESSIBILITY</a>
-</div>
-<div class="font-['Outfit'] uppercase tracking-widest text-[10px] text-white/40">
-                © 2024 SARHADI REAL ESTATE. ALL RIGHTS RESERVED.
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] pt-24 px-4 md:px-8 pb-12 flex flex-col justify-end overflow-hidden">
+        <!-- Hero Background Container -->
+        <div class="absolute inset-x-4 top-4 bottom-4 bg-text-main rounded-[2.5rem] overflow-hidden z-0 shadow-lg">
+            <img class="w-full h-full object-cover opacity-80 grayscale contrast-125" data-alt="A cinematic photo of two founders standing in an office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOyf_N4hNuH9nH9d75rEzf6A8YX6q0afVuH3WvJZYJ3-2QxOfASZ97qR0cIgMy4VXZNMV03ojVTj-BXwdF87bdGrVyJXvWg07rPvmUH8Hr9Ajv2m4JYm39ByzvpQAXwvBKdGDyRSjAzeDpjU-slkfZEVYWYI_lDe3ulqC_3ttBEa75kNugIORrNEHG2uXV23EA0vKpI-2iHs6hCMDTyy9Og7lyK5oUgsWhOnCR2fBJ1q4TIOJcycq2n4fLkzLV8Rp5Ynt-pzXHYQnx"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        </div>
+        
+        <!-- Hero Title Overlay -->
+        <div class="relative z-10 max-w-4xl mx-auto text-center pb-16 px-6">
+            <!-- Badge -->
+            <div class="inline-block bg-white/95 backdrop-blur rounded-full px-4 py-1.5 mb-6 shadow-sm">
+                <span class="font-outfit uppercase tracking-widest text-[9px] font-bold text-primary">Philosophy & Partners</span>
             </div>
-</div>
+            
+            <h1 class="font-outfit text-4xl md:text-7xl font-bold text-white uppercase tracking-tight leading-none mb-6">
+                The Architects <br/>
+                <span class="text-[#D5E2D1]">of Luxury</span>
+            </h1>
+            <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Narrative Section -->
+    <section class="py-24 px-6 md:px-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+        <div class="md:col-span-1 space-y-6">
+            <div class="inline-block bg-badge-green text-primary rounded-full px-4 py-1">
+                <span class="font-outfit uppercase tracking-widest text-[9px] font-extrabold">Our Philosophy</span>
+            </div>
+            <p class="font-sans text-text-muted text-base leading-relaxed">
+                At Sarhadi Real Estate, we view property not as a commodity, but as a masterpiece of human intent. Our approach is rooted in the belief that the spaces we inhabit define the lives we lead. We navigate the complexities of the ultra-high-net-worth market with the precision of a master architect and the discretion of a trusted advisor.
+            </p>
+            <p class="font-sans text-text-muted text-sm leading-relaxed">
+                Founded on the principles of structural minimalism and absolute transparency, we serve a global clientele who demand nothing less than perfection. Our reach extends across Canada's most prestigious postal codes, connecting exceptional individuals with unparalleled estates.
+            </p>
+        </div>
+        
+        <div class="md:col-span-2 flex items-center md:pl-16 md:border-l border-secondary-light min-h-[300px]">
+            <blockquote class="font-outfit text-3xl md:text-5xl font-bold text-text-main italic leading-tight max-w-2xl">
+                "Luxury is not a price point; it is a standard of existence."
+                <footer class="mt-8 not-italic font-outfit text-xs tracking-widest text-primary uppercase font-bold">— ANKIT &amp; KUNAL SARHADI</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Agent Profiles -->
+    <section class="py-24 bg-secondary-light/30 border-y border-secondary-light/60 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5">
+                <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-md border-4 border-white bg-accent-dark">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of Ankit and Kunal Sarhadi" src="agents.png"/>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7 flex flex-col justify-center">
+                <div class="inline-block bg-white border border-secondary-light text-primary rounded-full px-4 py-1 mb-6 self-start shadow-sm">
+                    <span class="font-outfit uppercase tracking-widest text-[9px] font-bold">Principal Directors</span>
+                </div>
+                <h3 class="font-outfit text-3xl md:text-5xl font-bold text-text-main mb-2">Ankit & Kunal Sarhadi</h3>
+                <p class="font-outfit text-xs font-bold text-secondary mb-6 tracking-widest uppercase">PRINCIPAL PARTNERS</p>
+                
+                <p class="font-sans text-text-muted text-base mb-6 leading-relaxed">
+                    With more than 15 years of experience in the Canadian real estate landscape, Ankit and Kunal have orchestrated some of the most significant transactions in the luxury sector.
+                </p>
+                <p class="font-sans text-text-muted text-sm leading-relaxed">
+                    Their approach combines data-driven precision with a formidable negotiation style. They oversee the strategic growth and global reach of Sarhadi Real Estate, connecting architectural heritage with modern investment requirements for the world's most discerning investors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Sarhadi Standard -->
+    <section class="py-24 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="mb-16 text-center">
+            <div class="inline-block bg-badge-green text-primary rounded-full px-4 py-1.5 mb-4">
+                <span class="font-outfit uppercase tracking-widest text-[9px] font-extrabold">Our Foundation</span>
+            </div>
+            <h2 class="font-outfit text-3xl md:text-5xl font-bold text-text-main">The Sarhadi Standard</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 border border-secondary-light rounded-3xl overflow-hidden bg-white shadow-sm">
+            <div class="p-16 border-b md:border-b-0 md:border-r border-secondary-light flex flex-col items-center justify-center text-center hover:bg-secondary-light/10 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">verified_user</span>
+                <h3 class="font-outfit text-lg font-bold text-text-main tracking-widest uppercase">UNCOMPROMISED<br/>INTEGRITY</h3>
+            </div>
+            <div class="p-16 border-b border-secondary-light flex flex-col items-center justify-center text-center hover:bg-secondary-light/10 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">home_repair_service</span>
+                <h3 class="font-outfit text-lg font-bold text-text-main tracking-widest uppercase">BESPOKE<br/>SERVICE</h3>
+            </div>
+            <div class="p-16 border-b md:border-b-0 md:border-r border-secondary-light flex flex-col items-center justify-center text-center hover:bg-secondary-light/10 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">language</span>
+                <h3 class="font-outfit text-lg font-bold text-text-main tracking-widest uppercase">GLOBAL<br/>REACH</h3>
+            </div>
+            <div class="p-16 flex flex-col items-center justify-center text-center hover:bg-secondary-light/10 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">analytics</span>
+                <h3 class="font-outfit text-lg font-bold text-text-main tracking-widest uppercase">DATA-DRIVEN<br/>PRECISION</h3>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-accent-dark border-t border-secondary-light/80 py-16 px-6 md:px-16">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
+            <div class="text-xl font-bold text-primary font-outfit tracking-tight">Sarhadi Real Estate</div>
+            <p class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted">
+                © 2026 Sarhadi Real Estate. Architectural Excellence.
+            </p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-8">
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Privacy</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Terms</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Legal</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Press</a>
+        </div>
+        
+        <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">public</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">share</span>
+            </a>
+            <a href="contact.html" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">mail</span>
+            </a>
+        </div>
+    </div>
 </footer>
-</body></html>
+
+</body>
+</html>

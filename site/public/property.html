@@ -1,133 +1,90 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Geist:wght@300;400;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sarhadi Real Estate | Exclusive Listing Details</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "primary-fixed": "#ffe088",
-                        "on-tertiary-fixed": "#1c1b1d",
-                        "surface-dim": "#131316",
-                        "surface-container-high": "#2a2a2d",
-                        "on-surface": "#e4e1e5",
-                        "inverse-primary": "#735c00",
-                        "on-primary-fixed-variant": "#574500",
-                        "error-container": "#93000a",
-                        "inverse-surface": "#e4e1e5",
-                        "surface-tint": "#e9c349",
-                        "primary-fixed-dim": "#e9c349",
-                        "on-primary-fixed": "#241a00",
-                        "on-secondary-fixed-variant": "#454747",
-                        "on-secondary-fixed": "#1a1c1c",
-                        "outline": "#99907c",
-                        "secondary-fixed": "#e2e2e2",
-                        "on-error-container": "#ffdad6",
-                        "background": "#131316",
-                        "surface-bright": "#39393c",
-                        "outline-variant": "#4d4635",
-                        "on-tertiary-fixed-variant": "#474649",
-                        "tertiary-fixed": "#e5e1e4",
-                        "surface-variant": "#353437",
-                        "secondary": "#c6c6c7",
-                        "on-secondary": "#2f3131",
-                        "on-primary": "#3c2f00",
-                        "surface-container-lowest": "#0e0e11",
-                        "inverse-on-surface": "#303033",
-                        "tertiary": "#d0ced0",
-                        "error": "#ffb4ab",
-                        "surface": "#131316",
-                        "on-background": "#e4e1e5",
-                        "surface-container-highest": "#353437",
-                        "primary": "#f2ca50",
-                        "on-error": "#690005",
-                        "surface-container": "#1f1f22",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "on-surface-variant": "#d0c5af",
-                        "tertiary-fixed-dim": "#c8c6c8",
-                        "on-tertiary-container": "#464547",
-                        "on-secondary-container": "#b4b5b5",
-                        "on-primary-container": "#554300",
-                        "surface-container-low": "#1b1b1e",
-                        "tertiary-container": "#b5b2b5",
-                        "secondary-container": "#454747",
-                        "primary-container": "#d4af37",
-                        "on-tertiary": "#313032"
+                    colors: {
+                        primary: "#2E5A27",        // Rich forest green
+                        "primary-hover": "#1F3F1B", // Darker forest green
+                        secondary: "#7FA073",      // Sage green accent
+                        "secondary-light": "#EAEFE9", // Soft cream sage background
+                        accent: "#FAF9F6",         // Warm cream main background
+                        "accent-dark": "#F2EFE9",    // Darker cream background
+                        "text-main": "#1C2D1F",     // Charcoal green headings
+                        "text-muted": "#566859",    // Muted slate text
+                        "white-card": "#FFFFFF",    // Card background
+                        "badge-green": "#D5E2D1",   // Badge background green
                     },
-                    "borderRadius": {
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "9999px"
+                    borderRadius: {
+                        "4xl": "2rem",
+                        "5xl": "2.5rem",
                     },
-                    "spacing": {
-                        "asymmetric-split": "66.66% / 33.33%",
-                        "gutter": "24px",
-                        "unit": "8px",
-                        "feature-offset": "120px",
-                        "margin": "64px"
-                    },
-                    "fontFamily": {
-                        "h1": ["Outfit"],
-                        "display-xl": ["Outfit"],
-                        "body-md": ["Geist"],
-                        "display-2xl": ["Outfit"],
-                        "body-lg": ["Geist"],
-                        "label-caps": ["Geist"],
-                        "h2": ["Outfit"],
-                        "mono": ["JetBrains Mono"]
-                    },
-                    "fontSize": {
-                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "400"}],
-                        "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                        "display-2xl": ["80px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "300"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
-                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
-                        "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "0.05em", "fontWeight": "400"}]
+                    fontFamily: {
+                        sans: ["'Plus Jakarta Sans'", "sans-serif"],
+                        outfit: ["Outfit", "sans-serif"],
+                        mono: ["'JetBrains Mono'", "monospace"],
                     }
-                },
-            },
+                }
+            }
         }
     </script>
-<style>
-        body { background-color: #0e0e11; color: #e4e1e5; -webkit-font-smoothing: antialiased; }
-        .sharp-edge { border-radius: 0px !important; }
-        .luxury-border { border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gold-border { border: 1px solid #D4AF37; }
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C2D1F;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
         .no-scrollbar::-webkit-scrollbar { display: none; }
+        .transition-all { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
-<body class="font-body-md overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<nav class="bg-zinc-950 border-b border-white/10 flex justify-between items-center w-full px-16 py-10 max-w-[1920px] mx-auto fixed top-0 z-50">
-<div class="text-xl font-semibold tracking-tighter text-[#D4AF37] uppercase font-h1">
-            Sarhadi Real Estate
+<body class="bg-accent text-text-main selection:bg-secondary/30 selection:text-primary overflow-x-hidden">
+
+<!-- Floating Pill Navigation Bar -->
+<div class="fixed top-4 left-4 right-4 z-50 max-w-[1400px] mx-auto">
+    <nav class="bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-secondary-light px-8 py-3.5 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+            <span class="text-xl font-bold tracking-tight text-primary font-outfit">Sarhadi</span>
+            <span class="text-[10px] uppercase tracking-widest text-secondary font-semibold border-l border-secondary-light pl-2">Real Estate</span>
+        </a>
+        
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="index.html">Home</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="listings.html">Listings</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-primary border-b-2 border-primary pb-0.5" href="property.html">Details</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="about.html">About</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="testimonials.html">Testimonials</a>
+            <a class="font-outfit uppercase tracking-widest text-[10px] font-bold text-text-muted hover:text-primary transition-all pb-0.5" href="contact.html">Contact</a>
         </div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="index.html">Home</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="listings.html">Listings</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-[#D4AF37] border-b-2 border-[#D4AF37] pb-1 transition-none" href="property.html">Details</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="about.html">About</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="testimonials.html">Testimonials</a>
-<a class="font-['Outfit'] uppercase tracking-[0.2em] text-xs font-medium text-white/60 hover:text-white transition-none" href="contact.html">Contact</a>
-</div>
-<button class="bg-primary-container text-on-primary-container px-8 py-3 font-label-caps uppercase text-[10px] tracking-[0.2em] hover:bg-[#D4AF37] hover:text-zinc-950 transition-none">
+        
+        <!-- Button -->
+        <a href="contact.html" class="bg-primary hover:bg-primary-hover text-white font-outfit text-[10px] tracking-widest uppercase font-semibold px-6 py-2.5 rounded-full shadow-sm hover:shadow transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-xs leading-none">mail</span>
             Inquire
-        </button>
-</nav>
-<!-- Main Content Canvas -->
-<main class="pt-[104px]">
-<div id="property-container">
-<div class="px-16 py-32 text-center text-white">Loading property details...</div>
+        </a>
+    </nav>
 </div>
+
+<!-- Main Content Area -->
+<main class="pt-24">
+    <div id="property-container">
+        <div class="px-6 py-32 text-center text-text-muted font-bold">Loading property details...</div>
+    </div>
+</main>
+
 <script>
     async function loadProperty() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -150,102 +107,150 @@
             const p = await res.json();
             
             container.innerHTML = `
-<!-- Hero Section: Full Bleed -->
-<section class="w-full h-[921px] relative overflow-hidden">
-<img class="w-full h-full object-cover" src="${p.images[0] || ''}"/>
-<div class="absolute inset-0 bg-gradient-to-t from-zinc-950/60 to-transparent"></div>
+<!-- Hero Section: Organic full container spacing -->
+<section class="relative px-4 md:px-8 pb-12 z-0">
+    <div class="h-[75vh] md:h-[80vh] w-full bg-text-main rounded-[2.5rem] overflow-hidden shadow-lg border border-secondary-light">
+        <img class="w-full h-full object-cover" src="${p.images[0] || ''}"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+    </div>
 </section>
-<!-- Asymmetric Detail Gallery -->
-<section class="px-16 -mt-32 relative z-10 grid grid-cols-12 gap-6">
-<div class="col-span-12 md:col-span-5 aspect-[4/5] overflow-hidden">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[1] || p.images[0] || ''}"/>
-</div>
-<div class="col-span-12 md:col-span-7 flex flex-col justify-end">
-<div class="grid grid-cols-2 gap-6 h-full">
-<div class="aspect-square overflow-hidden mt-24">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[0] || ''}"/>
-</div>
-<div class="aspect-square overflow-hidden">
-<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[1] || p.images[0] || ''}"/>
-</div>
-</div>
-</div>
+
+<!-- Asymmetric Detail Gallery with Organic Frames -->
+<section class="px-6 md:px-16 -mt-24 relative z-10 grid grid-cols-12 gap-6 max-w-[1400px] mx-auto">
+    <div class="col-span-12 md:col-span-5 aspect-[4/5] overflow-hidden rounded-[2rem] border-4 border-white shadow-md bg-accent-dark">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[1] || p.images[0] || ''}"/>
+    </div>
+    
+    <div class="col-span-12 md:col-span-7 flex flex-col justify-end">
+        <div class="grid grid-cols-2 gap-6">
+            <div class="aspect-square overflow-hidden rounded-[2rem] border-4 border-white shadow-md mt-16 md:mt-24 bg-accent-dark">
+                <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[0] || ''}"/>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-[2rem] border-4 border-white shadow-md bg-accent-dark">
+                <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="${p.images[1] || p.images[0] || ''}"/>
+            </div>
+        </div>
+    </div>
 </section>
+
 <!-- Property Header -->
-<section class="px-16 py-24 flex flex-col md:flex-row justify-between items-end border-b border-white/10">
-<div>
-<span class="font-label-caps text-primary tracking-[0.3em] mb-4 block">EXCLUSIVE LISTING</span>
-<h1 class="font-display-2xl text-white uppercase max-w-4xl">${p.title},<br/>${p.location.split(',')[0]}</h1>
-<div class="flex gap-12 mt-12 font-mono text-sm tracking-widest text-white/60">
-<div class="flex flex-col gap-2"><span class="text-[10px] uppercase font-label-caps text-white/40">Beds</span><span class="text-white text-lg">${p.bedrooms < 10 ? '0'+p.bedrooms : p.bedrooms}</span></div>
-<div class="flex flex-col gap-2"><span class="text-[10px] uppercase font-label-caps text-white/40">Baths</span><span class="text-white text-lg">${p.bathrooms < 10 ? '0'+p.bathrooms : p.bathrooms}</span></div>
-</div>
-</div>
-<div class="text-right">
-<span class="font-display-xl text-primary-container block mb-2">$${p.price.toLocaleString()}</span>
-<span class="font-label-caps text-white/40 tracking-[0.1em]">ESTIMATED MORTGAGE $${Math.floor(p.price * 0.005).toLocaleString()}/MO</span>
-</div>
+<section class="px-6 md:px-16 py-16 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-secondary-light/60 max-w-[1400px] mx-auto">
+    <div>
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-badge-green text-primary rounded-full px-4 py-1 mb-4">
+            <span class="material-symbols-outlined text-xs leading-none">grade</span>
+            <span class="font-outfit uppercase tracking-widest text-[9px] font-extrabold">Exclusive Listing</span>
+        </div>
+        
+        <h1 class="font-outfit text-3xl md:text-5xl font-bold text-text-main uppercase max-w-4xl tracking-tight leading-none">${p.title},<br/><span class="text-secondary">${p.location.split(',')[0]}</span></h1>
+        
+        <div class="flex gap-8 mt-8 font-outfit text-xs text-text-muted uppercase tracking-wider">
+            <div class="flex flex-col">
+                <span class="text-[9px] font-extrabold text-text-muted/50 tracking-widest">BEDROOMS</span>
+                <span class="text-text-main text-lg font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">bed</span>${p.bedrooms < 10 ? '0'+p.bedrooms : p.bedrooms}</span>
+            </div>
+            <div class="w-px h-10 bg-secondary-light/60"></div>
+            <div class="flex flex-col">
+                <span class="text-[9px] font-extrabold text-text-muted/50 tracking-widest">BATHROOMS</span>
+                <span class="text-text-main text-lg font-bold flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">bathtub</span>${p.bathrooms < 10 ? '0'+p.bathrooms : p.bathrooms}</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-right w-full md:w-auto">
+        <span class="font-mono text-primary font-bold text-3xl md:text-5xl block mb-2">$${p.price.toLocaleString()}</span>
+        <span class="font-outfit text-[10px] text-text-muted uppercase tracking-widest font-bold">Est. Mortgage: $${Math.floor(p.price * 0.005).toLocaleString()}/MO</span>
+    </div>
 </section>
+
 <!-- Description & Details -->
-<section class="px-16 py-32 grid grid-cols-1 md:grid-cols-3 gap-24">
-<div class="md:col-span-2">
-<h2 class="font-h1 text-white uppercase mb-12 tracking-[0.1em]">The Residence</h2>
-<div class="space-y-8 font-body-lg text-white/70 max-w-3xl leading-relaxed">
-<p>${p.description}</p>
-</div>
-</div>
-<div>
-<h2 class="font-label-caps text-white uppercase mb-8 tracking-[0.2em] text-sm">Key Features</h2>
-<ul class="space-y-0 border-t border-white/10">
-<li class="py-6 border-b border-white/10 flex justify-between items-center group"><span class="font-label-caps text-white/60 group-hover:text-white transition-colors uppercase">Heated Infinity Pool</span><span class="material-symbols-outlined text-primary-container text-sm">arrow_forward</span></li>
-<li class="py-6 border-b border-white/10 flex justify-between items-center group"><span class="font-label-caps text-white/60 group-hover:text-white transition-colors uppercase">1,200 Bottle Wine Cellar</span><span class="material-symbols-outlined text-primary-container text-sm">arrow_forward</span></li>
-<li class="py-6 border-b border-white/10 flex justify-between items-center group"><span class="font-label-caps text-white/60 group-hover:text-white transition-colors uppercase">Smart Home Integration</span><span class="material-symbols-outlined text-primary-container text-sm">arrow_forward</span></li>
-</ul>
-</div>
+<section class="px-6 md:px-16 py-16 grid grid-cols-1 md:grid-cols-3 gap-16 max-w-[1400px] mx-auto">
+    <div class="md:col-span-2">
+        <h2 class="font-outfit text-2xl font-bold text-text-main uppercase mb-6 tracking-wide">The Residence</h2>
+        <div class="space-y-6 font-sans text-text-muted text-base leading-relaxed max-w-3xl">
+            <p>${p.description}</p>
+        </div>
+    </div>
+    
+    <div>
+        <h2 class="font-outfit text-xs font-extrabold text-text-main uppercase mb-6 tracking-widest">Key Features</h2>
+        <ul class="space-y-0 border-t border-secondary-light/60">
+            <li class="py-4 border-b border-secondary-light/60 flex justify-between items-center group cursor-pointer hover:bg-secondary-light/10 px-2 transition-all rounded-lg">
+                <span class="font-outfit text-xs font-bold text-text-muted group-hover:text-primary uppercase tracking-widest">Heated Infinity Pool</span>
+                <span class="material-symbols-outlined text-primary text-sm">arrow_forward</span>
+            </li>
+            <li class="py-4 border-b border-secondary-light/60 flex justify-between items-center group cursor-pointer hover:bg-secondary-light/10 px-2 transition-all rounded-lg">
+                <span class="font-outfit text-xs font-bold text-text-muted group-hover:text-primary uppercase tracking-widest">1,200 Bottle Wine Cellar</span>
+                <span class="material-symbols-outlined text-primary text-sm">arrow_forward</span>
+            </li>
+            <li class="py-4 border-b border-secondary-light/60 flex justify-between items-center group cursor-pointer hover:bg-secondary-light/10 px-2 transition-all rounded-lg">
+                <span class="font-outfit text-xs font-bold text-text-muted group-hover:text-primary uppercase tracking-widest">Smart Home Integration</span>
+                <span class="material-symbols-outlined text-primary text-sm">arrow_forward</span>
+            </li>
+        </ul>
+    </div>
 </section>
+
 <!-- Agent Contact Block -->
-<section class="px-16 py-32 bg-surface-container-low border-t border-white/10">
-<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
-<div class="flex gap-12">
-<div class="text-center group cursor-pointer">
-<div class="w-48 h-64 overflow-hidden mb-6 bg-zinc-900">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="agents.png"/>
-</div>
-<h3 class="font-h2 text-white uppercase text-lg">Ankit & Kunal Sarhadi</h3>
-<p class="font-label-caps text-white/40 text-[10px] mt-1 tracking-widest">PRINCIPAL PARTNERS</p>
-</div>
-</div>
-<div class="text-center md:text-left flex flex-col items-center md:items-start max-w-md">
-<h2 class="font-display-xl text-white mb-6">Inquire for Private Access</h2>
-<p class="font-body-md text-white/60 mb-10">Experience the architectural mastery of ${p.title}. Private tours are available by appointment for qualified purchasers.</p>
-<button class="gold-border text-primary-container px-12 py-4 font-label-caps uppercase text-xs tracking-[0.2em] hover:bg-primary-container hover:text-zinc-950 transition-none">Request a Private Tour</button>
-</div>
-</div>
+<section class="mx-4 md:mx-8 mb-16 py-16 bg-secondary-light/50 border border-white rounded-[2.5rem] shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left">
+            <div class="w-36 h-48 overflow-hidden rounded-[2rem] border-4 border-white shadow-md bg-accent-dark shrink-0">
+                <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="agents.png"/>
+            </div>
+            <div>
+                <h3 class="font-outfit text-2xl font-bold text-text-main mb-1">Ankit & Kunal Sarhadi</h3>
+                <p class="font-outfit text-[9px] font-extrabold text-secondary tracking-widest uppercase mb-4">PRINCIPAL PARTNERS</p>
+                <p class="font-sans text-text-muted text-xs leading-relaxed max-w-sm">Experience the architectural mastery of ${p.title}. Private tours are available by appointment for qualified purchasers.</p>
+            </div>
+        </div>
+        
+        <div class="text-center md:text-right shrink-0">
+            <a href="contact.html" class="inline-block bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-outfit text-xs font-bold uppercase tracking-widest shadow-md transition-all">
+                Request a Private Tour
+            </a>
+        </div>
+    </div>
 </section>
             `;
         } catch(e) {
             console.error("Failed to load property:", e);
-            container.innerHTML = '<div class="px-16 py-32 text-center text-red-500">Failed to load property details. Please try again later.</div>';
+            container.innerHTML = '<div class="px-6 py-32 text-center text-red-500 font-bold">Failed to load property details. Please make sure the server is running.</div>';
         }
     }
     loadProperty();
 </script>
-</main>
-<!-- Footer Component -->
-<footer class="bg-zinc-950 border-t border-white/10 w-full px-16 py-12">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1920px] mx-auto">
-<div class="text-lg font-bold text-white uppercase font-h2 tracking-wider">
-                Sarhadi Real Estate
-            </div>
-<div class="flex gap-12 font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40">
-<a class="hover:text-white transition-none" href="#">Privacy</a>
-<a class="hover:text-white transition-none" href="#">Terms</a>
-<a class="hover:text-white transition-none" href="#">Legal</a>
-<a class="hover:text-white transition-none" href="#">Press</a>
-</div>
-<div class="font-['Outfit'] uppercase tracking-[0.15em] text-[10px] text-white/40">
-                © 2024 Sarhadi Real Estate. Architectural Excellence.
-            </div>
-</div>
+
+<!-- Footer -->
+<footer class="bg-accent-dark border-t border-secondary-light/80 py-16 px-6 md:px-16">
+    <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
+            <div class="text-xl font-bold text-primary font-outfit tracking-tight">Sarhadi Real Estate</div>
+            <p class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted">
+                © 2026 Sarhadi Real Estate. Architectural Excellence.
+            </p>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-8">
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Privacy</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Terms</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Legal</a>
+            <a class="font-outfit uppercase tracking-widest text-[9px] font-bold text-text-muted hover:text-primary transition-all" href="#">Press</a>
+        </div>
+        
+        <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">public</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">share</span>
+            </a>
+            <a href="contact.html" class="w-10 h-10 bg-white border border-secondary-light rounded-full flex items-center justify-center text-text-muted hover:text-primary hover:shadow-sm transition-all">
+                <span class="material-symbols-outlined text-sm leading-none">mail</span>
+            </a>
+        </div>
+    </div>
 </footer>
-</body></html>
+
+</body>
+</html>
