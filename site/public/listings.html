@@ -145,7 +145,7 @@
         grid.innerHTML = '<div class="col-span-12 text-center py-16 text-text-muted font-bold">Fetching matching properties...</div>';
         
         try {
-            let url = new URL('http://localhost:3000/api/listings');
+            let url = new URL('https://realestate-site-gaqq.onrender.com/api/listings');
             Object.keys(params).forEach(key => {
                 if (params[key]) url.searchParams.append(key, params[key]);
             });
